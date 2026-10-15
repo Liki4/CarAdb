@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ui_background">#17242B</color>
+    <color name="ui_surface">#1E2E36</color>
+    <color name="ui_legacy_navigation_bar">#17242B</color>
+    <color name="ui_text_primary">#EAF3F4</color>
+    <color name="ui_text_secondary">#B1C4CC</color>
+    <color name="ui_text_hint">#9DB4BF</color>
+    <color name="ui_accent">#9ADBD4</color>
+    <color name="ui_on_accent">#132F32</color>
+    <color name="ui_accent_soft">#293F44</color>
+    <color name="ui_accent_pressed">#B3E7E1</color>
+    <color name="ui_quiet">#293B44</color>
+    <color name="ui_line">#3A4E58</color>
+    <color name="ui_focus">#9ADBD4</color>
+    <color name="ui_ripple">#329ADBD4</color>
+    <color name="ui_on_accent_ripple">#30132F32</color>
+    <color name="ui_disabled_background">#2C3E47</color>
+    <color name="ui_disabled_foreground">#8AA2AD</color>
+    <color name="ui_status_warning">#EFBA91</color>
+    <color name="ui_status_error">#EDB2B7</color>
+    <color name="ui_error_background">#472E37</color>
+    <color name="ui_switch_off">#687E88</color>
+    <color name="ui_switch_thumb_off">#EAF3F4</color>
+    <color name="ui_switch_disabled">#40545E</color>
+    <color name="ui_switch_thumb_disabled">#8299A3</color>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation"
+    android:layout_width="@dimen/ui_nav_width"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background"
+    android:orientation="vertical"
+    android:padding="@dimen/ui_nav_padding">
+
+    <LinearLayout
+        android:id="@+id/nav_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_small_gap"
+        android:layout_marginBottom="@dimen/ui_nav_brand_gap"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/ui_brand_size"
+            android:layout_height="@dimen/ui_brand_size"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ui_brand" />
+        <TextView
+            style="@style/Ui.Text.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_small_gap"
+            android:text="@string/app_name"
+            android:textSize="@dimen/ui_brand_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/nav_connection"
+            style="@style/Ui.Button.Nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ui_nav_connection"
+            android:text="@string/ui_page_connection" />
+        <Button
+            android:id="@+id/nav_config"
+            style="@style/Ui.Button.Nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_small_gap"
+            android:drawableTop="@drawable/ui_nav_config"
+            android:text="@string/ui_page_config" />
+        <Button
+            android:id="@+id/nav_settings"
+            style="@style/Ui.Button.Nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_small_gap"
+            android:drawableTop="@drawable/ui_nav_settings"
+            android:text="@string/ui_page_settings" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nav_caption"
+        style="@style/Ui.Text.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/ui_nav_caption" />
+</LinearLayout>

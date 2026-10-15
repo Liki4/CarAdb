@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window dimensions, not physical display pixels, select the larger tiers. -->
+    <dimen name="ui_rail_min_height">720dp</dimen>
+    <dimen name="ui_nav_width">120dp</dimen>
+    <dimen name="ui_nav_item_height">88dp</dimen>
+    <dimen name="ui_action_width">248dp</dimen>
+    <dimen name="ui_action_height">184dp</dimen>
+    <dimen name="ui_compact_action_height">88dp</dimen>
+    <dimen name="ui_action_icon">56dp</dimen>
+    <dimen name="ui_compact_action_icon">32dp</dimen>
+    <dimen name="ui_gap">16dp</dimen>
+    <dimen name="ui_dialog_width">560dp</dimen>
+    <dimen name="ui_body_text">22sp</dimen>
+    <dimen name="ui_control_height">72dp</dimen>
+
+    <dimen name="ui_title_text">44sp</dimen>
+    <dimen name="ui_page_title_text">24sp</dimen>
+    <dimen name="ui_section_title_text">30sp</dimen>
+    <dimen name="ui_label_text">24sp</dimen>
+    <dimen name="ui_caption_text">18sp</dimen>
+    <dimen name="ui_nav_text">20sp</dimen>
+    <dimen name="ui_control_text">22sp</dimen>
+    <dimen name="ui_action_text">28sp</dimen>
+    <dimen name="ui_editor_text">22sp</dimen>
+    <dimen name="ui_host_text">24sp</dimen>
+    <dimen name="ui_brand_text">20sp</dimen>
+    <dimen name="ui_page_padding">24dp</dimen>
+    <dimen name="ui_page_vertical_padding">16dp</dimen>
+    <dimen name="ui_header_height">88dp</dimen>
+    <dimen name="ui_header_padding">8dp</dimen>
+    <dimen name="ui_small_gap">8dp</dimen>
+    <dimen name="ui_section_gap">28dp</dimen>
+    <dimen name="ui_body_gap">24dp</dimen>
+    <dimen name="ui_nav_padding">10dp</dimen>
+    <dimen name="ui_nav_brand_gap">28dp</dimen>
+    <dimen name="ui_nav_icon">28dp</dimen>
+    <dimen name="ui_nav_icon_gap">8dp</dimen>
+    <dimen name="ui_brand_size">48dp</dimen>
+    <dimen name="ui_inline_icon">24dp</dimen>
+    <dimen name="ui_status_dot">14dp</dimen>
+    <dimen name="ui_status_halo">28dp</dimen>
+    <dimen name="ui_control_padding">20dp</dimen>
+    <dimen name="ui_control_vertical_padding">12dp</dimen>
+    <dimen name="ui_power_padding">20dp</dimen>
+    <dimen name="ui_field_padding">20dp</dimen>
+    <dimen name="ui_control_radius">16dp</dimen>
+    <dimen name="ui_power_radius">24dp</dimen>
+    <dimen name="ui_chip_radius">12dp</dimen>
+    <dimen name="ui_editor_min_height">256dp</dimen>
+    <dimen name="ui_stroke">1dp</dimen>
+    <dimen name="ui_focus_stroke">3dp</dimen>
+    <dimen name="ui_switch_width">88dp</dimen>
+    <dimen name="ui_switch_track_height">44dp</dimen>
+    <dimen name="ui_switch_thumb_size">34dp</dimen>
+    <dimen name="ui_switch_thumb_inset">5dp</dimen>
+</resources>

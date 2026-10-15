@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_surface">
+
+    <!-- Only system/IME insets belong on page; design spacing stays inside the shell. -->
+    <LinearLayout
+        android:id="@+id/app_shell"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/ui_navigation" />
+
+        <LinearLayout
+            android:id="@+id/main_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/ui_header_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/ui_page_padding"
+                android:paddingTop="@dimen/ui_header_padding"
+                android:paddingEnd="@dimen/ui_page_padding"
+                android:paddingBottom="@dimen/ui_header_padding">
+
+                <TextView
+                    android:id="@+id/page_title"
+                    style="@style/Ui.Text.PageTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ui_page_connection" />
+
+                <TextView
+                    android:id="@+id/profile_badge"
+                    style="@style/Ui.Text.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/ui_small_gap"
+                    android:drawableStart="@drawable/ui_lock"
+                    android:drawablePadding="@dimen/ui_small_gap"
+                    android:gravity="center_vertical"
+                    android:text="@string/ui_badge_loading" />
+
+                <Button
+                    android:id="@+id/show_details"
+                    style="@style/Ui.Button.Quiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/ui_small_gap"
+                    android:contentDescription="@string/ui_show_details_description"
+                    android:drawableStart="@drawable/ui_info"
+                    android:text="@string/ui_show_details" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_stroke"
+                android:background="@color/ui_line"
+                android:importantForAccessibility="no" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <include layout="@layout/page_connection" />
+                <include layout="@layout/page_config" />
+                <include layout="@layout/page_settings" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

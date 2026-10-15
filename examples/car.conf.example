@@ -1,0 +1,13 @@
+# Replace the three angle-bracket values before pasting into Car ADB 0.2.0+.
+[Interface]
+PrivateKey = <CAR_PRIVATE_KEY_BASE64>
+Address = 10.77.0.2/30
+# Optional compatibility declaration: Car ADB never changes system routes.
+Table = off
+
+[Peer]
+PublicKey = <GATEWAY_PUBLIC_KEY_BASE64>
+Endpoint = <GATEWAY_PUBLIC_IPV4_OR_HOSTNAME>:51820
+# A host-form prefix such as 10.77.0.1/30 is accepted and normalized too.
+AllowedIPs = 10.77.0.0/30
+PersistentKeepalive = 25

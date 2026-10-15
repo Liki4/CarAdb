@@ -1,0 +1,11 @@
+# Standard wg-quick gateway configuration. Keep the actual private key local.
+# Do not copy Table=off from the app unless you manage gateway routes yourself.
+[Interface]
+PrivateKey = <GATEWAY_PRIVATE_KEY_BASE64>
+Address = 10.77.0.1/30
+ListenPort = 51820
+
+[Peer]
+PublicKey = <CAR_PUBLIC_KEY_BASE64>
+# The gateway may keep the narrow car host route.
+AllowedIPs = 10.77.0.2/32

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="UiPlatformTheme" parent="android:style/Theme.Material.Light.NoActionBar" />
+
+    <style name="AppTheme.Base" parent="UiPlatformTheme">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:colorAccent">@color/ui_accent</item>
+        <item name="android:colorControlNormal">@color/ui_text_secondary</item>
+        <item name="android:colorControlActivated">@color/ui_accent</item>
+        <item name="android:colorControlHighlight">@color/ui_ripple</item>
+        <item name="android:colorButtonNormal">@color/ui_quiet</item>
+        <item name="android:colorBackgroundFloating">@color/ui_surface</item>
+        <item name="android:textColorPrimary">@color/ui_text_primary</item>
+        <item name="android:textColorSecondary">@color/ui_text_secondary</item>
+        <item name="android:textColorHint">@color/ui_text_hint</item>
+        <item name="android:windowBackground">@color/ui_surface</item>
+        <item name="android:statusBarColor">@color/ui_background</item>
+        <item name="android:navigationBarColor">@color/ui_legacy_navigation_bar</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+
+    <!-- Each API layer inherits the previous layer, including in night mode. -->
+    <style name="AppTheme.StatusBar" parent="AppTheme.Base" />
+    <style name="AppTheme.NavigationBar" parent="AppTheme.StatusBar" />
+    <style name="AppTheme" parent="AppTheme.NavigationBar" />
+</resources>

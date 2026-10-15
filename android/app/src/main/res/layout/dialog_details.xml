@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:paddingStart="@dimen/ui_gap"
+    android:paddingTop="@dimen/ui_gap"
+    android:paddingEnd="@dimen/ui_gap"
+    android:paddingBottom="@dimen/ui_gap">
+    <TextView
+        android:id="@+id/details"
+        style="@style/Ui.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:lineSpacingMultiplier="1.4"
+        android:saveEnabled="false"
+        android:textIsSelectable="true" />
+</ScrollView>

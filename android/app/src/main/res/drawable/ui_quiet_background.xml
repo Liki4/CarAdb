@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/ui_ripple">
+    <item android:id="@android:id/mask">
+        <shape><solid android:color="@android:color/white" /><corners android:radius="@dimen/ui_control_radius" /></shape>
+    </item>
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <shape><solid android:color="@android:color/transparent" /><corners android:radius="@dimen/ui_control_radius" /></shape>
+            </item>
+            <item android:state_focused="true">
+                <shape><solid android:color="@color/ui_accent_soft" /><corners android:radius="@dimen/ui_control_radius" /><stroke android:width="@dimen/ui_focus_stroke" android:color="@color/ui_focus" /></shape>
+            </item>
+            <item android:state_pressed="true">
+                <shape><solid android:color="@color/ui_quiet" /><corners android:radius="@dimen/ui_control_radius" /></shape>
+            </item>
+            <item>
+                <shape><solid android:color="@android:color/transparent" /><corners android:radius="@dimen/ui_control_radius" /></shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/ui_on_accent_ripple">
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <shape><solid android:color="@color/ui_disabled_background" /><corners android:radius="@dimen/ui_control_radius" /></shape>
+            </item>
+            <item android:state_focused="true">
+                <shape><solid android:color="@color/ui_accent" /><corners android:radius="@dimen/ui_control_radius" /><stroke android:width="@dimen/ui_focus_stroke" android:color="@color/ui_on_accent" /></shape>
+            </item>
+            <item android:state_pressed="true">
+                <shape><solid android:color="@color/ui_accent_pressed" /><corners android:radius="@dimen/ui_control_radius" /></shape>
+            </item>
+            <item>
+                <shape><solid android:color="@color/ui_accent" /><corners android:radius="@dimen/ui_control_radius" /></shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

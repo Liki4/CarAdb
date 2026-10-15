@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_connection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/ui_page_padding"
+    android:paddingTop="@dimen/ui_page_vertical_padding"
+    android:paddingEnd="@dimen/ui_page_padding"
+    android:paddingBottom="@dimen/ui_page_vertical_padding">
+
+    <LinearLayout
+        android:id="@+id/connection_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/connection_copy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:clipToPadding="false"
+            android:scrollbars="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/ui_gap"
+                android:paddingBottom="@dimen/ui_gap">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ui_gap"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <FrameLayout
+                        android:layout_width="@dimen/ui_status_halo"
+                        android:layout_height="@dimen/ui_status_halo"
+                        android:background="@drawable/ui_status_halo">
+                        <View
+                            android:id="@+id/status_indicator"
+                            android:layout_width="@dimen/ui_status_dot"
+                            android:layout_height="@dimen/ui_status_dot"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ui_status_indicator"
+                            android:importantForAccessibility="no" />
+                    </FrameLayout>
+                    <TextView
+                        android:id="@+id/status_eyebrow"
+                        style="@style/Ui.Text.Secondary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/ui_small_gap"
+                        android:layout_weight="1"
+                        android:text="@string/ui_status_eyebrow" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/status"
+                    style="@style/Ui.Text.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ui_gap"
+                    android:accessibilityLiveRegion="polite"
+                    android:text="@string/ui_title_loading" />
+
+                <TextView
+                    android:id="@+id/status_message"
+                    style="@style/Ui.Text.Secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ui_message_loading" />
+
+                <TextView
+                    android:id="@+id/tunnel_address"
+                    style="@style/Ui.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ui_gap"
+                    android:background="@drawable/ui_chip_background"
+                    android:fontFamily="monospace"
+                    android:paddingStart="@dimen/ui_gap"
+                    android:paddingTop="@dimen/ui_small_gap"
+                    android:paddingEnd="@dimen/ui_gap"
+                    android:paddingBottom="@dimen/ui_small_gap"
+                    android:text="@string/ui_tunnel_port" />
+
+                <TextView
+                    android:id="@+id/error"
+                    style="@style/Ui.Text.Error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ui_gap"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/connection_actions"
+            android:layout_width="@dimen/ui_action_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/ui_body_gap"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/connect"
+                style="@style/Ui.Button.Power"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/ui_connect" />
+            <Button
+                android:id="@+id/disconnect"
+                style="@style/Ui.Button.Power.Stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/ui_disconnect"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/cancel_restore"
+                style="@style/Ui.Button.Secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_small_gap"
+                android:enabled="false"
+                android:text="@string/ui_cancel_restore"
+                android:textSize="@dimen/ui_caption_text"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/action_caption"
+                style="@style/Ui.Text.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_small_gap"
+                android:gravity="center"
+                android:text="@string/ui_action_note_connect" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_stroke"
+        android:layout_marginTop="@dimen/ui_small_gap"
+        android:background="@color/ui_line"
+        android:importantForAccessibility="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/ui_small_gap">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                style="@style/Ui.Text.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ui_local_adb" />
+            <TextView
+                android:id="@+id/home_local_host"
+                style="@style/Ui.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/boot_shortcut"
+            style="@style/Ui.Button.Quiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ui_small_gap"
+            android:text="@string/ui_boot_off"
+            android:textColor="@color/ui_accent" />
+    </LinearLayout>
+</LinearLayout>

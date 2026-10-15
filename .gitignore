@@ -1,0 +1,38 @@
+# IDE and build caches
+.idea/
+*.iml
+.gradle/
+.kotlin/
+**/build/
+local.properties
+
+# Generated application artifacts (the Gradle wrapper JAR is source tooling)
+/dist/
+*.apk
+*.aab
+*.aar
+*-sources.jar
+*.log
+
+# Local assistant sessions, design drafts, and deployment history
+/.claude/
+/.superpowers/
+/docs/superpowers/
+
+# Real configurations and signing credentials
+/car.conf
+/signing/
+*.jks
+*.keystore
+*.p12
+*.pass
+*.key
+*.pem
+*.lineage
+.env
+.env.*
+!.env.example
+
+# OS metadata
+.DS_Store
+Thumbs.db
